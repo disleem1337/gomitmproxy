@@ -418,6 +418,8 @@ func (p *Proxy) handleTunnel(session *Session) (err error) {
 			GetClientCertificate: getClientCert,
 		}, tlsnew.HelloRandomized)
 
+		log.Print(tlsConn.ClientHelloID.Client)
+		log.Print(tlsConn.Extensions)
 		// Handshake with the remote server.
 		if err = tlsConn.Handshake(); err != nil {
 			// TODO(ameshkov): Consider adding to invalidTLSHosts.
