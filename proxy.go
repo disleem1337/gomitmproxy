@@ -416,7 +416,7 @@ func (p *Proxy) handleTunnel(session *Session) (err error) {
 		tlsConn := tlsnew.UClient(conn, &tlsnew.Config{
 			ServerName:           session.req.URL.Host,
 			GetClientCertificate: getClientCert,
-		}, tlsnew.HelloRandomized)
+		}, tlsnew.HelloChrome_102)
 
 		// Handshake with the remote server.
 		if err = tlsConn.Handshake(); err != nil {
