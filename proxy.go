@@ -14,7 +14,7 @@ import (
 	"time"
 
 	"github.com/AdguardTeam/golibs/log"
-	"github.com/AdguardTeam/gomitmproxy/proxyutil"
+	"github.com/disleem1337/gomitmproxy/proxyutil"
 	"github.com/pkg/errors"
 	tlsnew "github.com/refraction-networking/utls"
 )

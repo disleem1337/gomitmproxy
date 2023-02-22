@@ -15,9 +15,9 @@ import (
 	"time"
 
 	"github.com/AdguardTeam/golibs/log"
-	"github.com/AdguardTeam/gomitmproxy"
-	"github.com/AdguardTeam/gomitmproxy/mitm"
-	"github.com/AdguardTeam/gomitmproxy/proxyutil"
+	"github.com/disleem1337/gomitmproxy"
+	"github.com/disleem1337/gomitmproxy/mitm"
+	"github.com/disleem1337/gomitmproxy/proxyutil"
 
 	_ "net/http/pprof"
 )
